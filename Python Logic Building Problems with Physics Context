@@ -1,0 +1,330 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM51nubktVX7m9BHwh5b3uQ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/laiba-lang/python-basics-assignment./blob/main/Python%20Logic%20Building%20Problems%20with%20Physics%20Context\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problem 1: Calculate Distance Using Speed and Time\n",
+        "speed=int(input(\"speed in meters per second: \"))\n",
+        "time=int(input(\"distance travaled in meters: \"))\n",
+        "distance=time*speed\n",
+        "print(distance)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YU2C743E762B",
+        "outputId": "deed9a6d-2c36-4eb4-c792-2a255961d08e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "speed in meters per second: 5\n",
+            "distance travaled in meters: 6\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problem 2: Calculate Force Using Newton’s Second law\n",
+        "mass=int(input(\"mass in kg : \"))\n",
+        "acceleration=int(input(\"acceleration in meter per second square: \"))\n",
+        "force = mass*acceleration\n",
+        "print(force)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Et3aMhgfFFp8",
+        "outputId": "f047c157-5523-4a1a-d66f-650633aaeff5"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "mass in kg : 3\n",
+            "acceleration in meter per second square: 4\n",
+            "12\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problem 3: Gravitational Potential Energy\n",
+        "g=9.8\n",
+        "mass=int(input(\"mass in kg: \"))\n",
+        "height=int(input(\"height in meter: \"))\n",
+        "potential_energy=g*mass*height\n",
+        "print(potential_energy)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "i13JcD-nFu6j",
+        "outputId": "b665a119-88dd-4020-83b7-4e3b0a99dadc"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "mass in kg: 8\n",
+            "height in meter: 9\n",
+            "705.6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problem 4: Kinetic Energy of an Object\n",
+        "mass=int(input(\"mass in kg: \"))\n",
+        "velocity=int(input(\"velocity in meter per second: \"))\n",
+        "kinetic_energy=1/2*mass*velocity\n",
+        "print(kinetic_energy)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ule8qQZUGmjn",
+        "outputId": "b2984fb5-d819-4896-c9e2-9e3d7958ee9f"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "mass in kg: 7\n",
+            "velocity in meter per second: 7\n",
+            "24.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problem 5: Ohm’s Law – Voltage Calculation\n",
+        "I=int(input(\"current in amperes: \"))\n",
+        "R=int(input(\"resistence in ohm's: \" ))\n",
+        "V=I*R\n",
+        "print(V)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0GWBl7lAHbxW",
+        "outputId": "b1cb9799-c05f-42c2-88ea-1db82845e527"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "current in amperes: 5\n",
+            "resistence in ohm's: 8\n",
+            "40\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problem 6: Projectile Motion – Maximum Height\n",
+        "import math\n",
+        "velocity=int(input(\"velocity in meter per second: \"))\n",
+        "angle=int(input(\"angle in  degrees: \"))\n",
+        "theta=math.radians(angle)\n",
+        "h_max = velocity**2*math.sin(theta)**2 / (2*g)\n",
+        "print(round(h_max,2))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PaZBaXVTIVW2",
+        "outputId": "cb0c9eb1-4238-4ef1-92d1-c55eda8e345c"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "velocity in meter per second: 7\n",
+            "angle in  degrees: 67\n",
+            "2.12\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problem 7: Harmonic Oscillator – Period of a Spring\n",
+        "import math\n",
+        "\n",
+        "m = int(input(\"mass (m): \"))\n",
+        "k = int(input(\"spring constant (k): \"))\n",
+        "\n",
+        "T = 2 * math.pi * math.sqrt(m / k)\n",
+        "print(round(T, 2))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MqZFTgUGKv0n",
+        "outputId": "49d9f218-fd68-480d-9526-81cec2125b92"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "mass (m): 787\n",
+            "spring constant (k): 676\n",
+            "6.78\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problem 8: Free Fall – Time to Hit the Ground\n",
+        "import math\n",
+        "height=int(input(\"height in meters: \"))\n",
+        "g=9.8\n",
+        "\n",
+        "t=math.sqrt(2*height/g)\n",
+        "print(round(t,2))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8HdhPPg-OUeL",
+        "outputId": "c0693d8d-f364-4897-ea7a-08d36d40266a"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "height in meters: 76\n",
+            "3.94\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problem 9: Work Done by a Force\n",
+        "f=int(input(\"force in newton: \"))\n",
+        "D=int(input(\"displacement in meter: \"))\n",
+        "theta=int(input(\"angle in degree: \"))\n",
+        "angle=math.radians(theta)\n",
+        "work=f*D*math.sin(theta)\n",
+        "print(round(work,2))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AiM7kQz1NZTf",
+        "outputId": "a07264f5-186f-4837-bb1d-546fee3bb58e"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "force in newton: 87\n",
+            "displacement in meter: 87\n",
+            "angle in degree: 87\n",
+            "-6220.34\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problem 10: Power Consumption of a Device\n",
+        "w=int(input(\"work in joules: \"))\n",
+        "t=int(input(\"time in seconds: \" ))\n",
+        "power=w/t\n",
+        "print(round(power,2))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AI0AgSZ3xK5I",
+        "outputId": "87b99b27-e33d-48f4-9288-1910fedaaf70"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "work in joules: 45\n",
+            "time in seconds: 6\n",
+            "7.5\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
